@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Playground</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive Playground 🎮</h1>
+        <p>Press any key to see magic happen!</p>
+        <div id="key-display">No key pressed yet</div>
+    </header>
+
+    <main>
+        <!-- Event Handling Section -->
+        <section class="section" id="event-handling">
+            <h2>Event Handling 🎈</h2>
+            <div class="button-container">
+                <button id="color-change-btn">Change My Color!</button>
+                <div id="hover-me" class="hover-box">
+                    <p>Hover over me!</p>
+                </div>
+                <button id="secret-btn">Double-click for a surprise!</button>
+            </div>
+        </section>
+
+        <!-- Image Gallery Section -->
+        <section class="section" id="image-gallery">
+            <h2>Image Gallery 🖼️</h2>
+            <div class="gallery-container">
+                <button id="prev-btn">Previous</button>
+                <div class="image-display">
+                    <div id="gallery-img" class="placeholder-image"></div>
+                    <p id="image-caption">Cool Nature Scene</p>
+                </div>
+                <button id="next-btn">Next</button>
+            </div>
+        </section>
+
+        <!-- Tabs Section -->
+        <section class="section" id="tabs-section">
+            <h2>Content Tabs 📑</h2>
+            <div class="tabs-container">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="tab1">Tab 1</button>
+                    <button class="tab-btn" data-tab="tab2">Tab 2</button>
+                    <button class="tab-btn" data-tab="tab3">Tab 3</button>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="tab1">
+                        <h3>First Tab Content</h3>
+                        <p>This is the content for the first tab. Pretty cool, right?</p>
+                    </div>
+                    <div class="tab-pane" id="tab2">
+                        <h3>Second Tab Content</h3>
+                        <p>Now you're looking at the second tab. Navigation works!</p>
+                    </div>
+                    <div class="tab-pane" id="tab3">
+                        <h3>Third Tab Content</h3>
+                        <p>And finally, you've reached the third tab. Nice job!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Form Validation Section -->
+        <section class="section" id="form-validation">
+            <h2>Form Validation 📋✅</h2>
+            <form id="validation-form">
+                <div class="form-group">
+                    <label for="username">Username (required):</label>
+                    <input type="text" id="username" name="username">
+                    <span class="error-message" id="username-error"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                    <span class="error-message" id="email-error"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password">
+                    <span class="error-message" id="password-error"></span>
+                    <div class="password-strength">
+                        <div class="strength-meter">
+                            <div class="meter-fill" id="password-strength-meter"></div>
+                        </div>
+                        <span id="password-strength-text">Password strength</span>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password">
+                    <span class="error-message" id="confirm-password-error"></span>
+                </div>
+                
+                <button type="submit" id="submit-btn">Submit</button>
+                <div id="form-success" class="hidden">Form submitted successfully! ✅</div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created with 💖 for JavaScript Event Handling Assignment</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
